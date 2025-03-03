@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Tech-Transit/CI-CD-Testing-Learning/issues"
   },
-  "homepage": "https://github.com/Tech-Transit/CI-CD-Testing-Learning#readme"
+  "homepage": "https://github.com/Tech-Transit/CI-CD-Testing-Learning#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2"
+  }
 }
