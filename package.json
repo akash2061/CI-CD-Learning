@@ -4,7 +4,10 @@
   "description": "1st CI/CD Deployment. 😭",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet!\""
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests yet!\"",
+    "ci-test": "start-server-and-test 'node index.js' http://localhost:5000/geo-location 'curl -s http://localhost:5000/geo-location'"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,11 @@
   "homepage": "https://github.com/Tech-Transit/CI-CD-Testing-Learning#readme",
   "dependencies": {
     "express": "^4.21.2",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "start-server-and-test": "^1.14.0"
   }
 }
