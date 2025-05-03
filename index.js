@@ -17,7 +17,7 @@ app.get('/geo-location', async (req, res) => {
 
         const geoResponse = await fetch(`http://ip-api.com/json/${ip}`);
         const geoData = await geoResponse.json();
-
+        console.log('Geolocation data:', geoData);
         res.json(geoData); // Returns only the geolocation data
     } catch (error) {
         console.error('Error fetching geolocation:', error);
